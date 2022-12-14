@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\OLD-2-NEW\API\API_Training_B51\API_automation_training\UI-Automation_Framework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="parallel.UIRunner" hash-for-method="runScenario(&quot;Reset password&quot;, &quot;Optional[This is to test Resetpassword functionality]&quot;)">runScenario("Reset password", "Optional[This is to test Resetpassword functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="parallel.UIRunner" hash-for-method="runScenario(&quot;Invalid Login to the Application&quot;, &quot;Optional[This is to test Login functionality]&quot;)">runScenario("Invalid Login to the Application", "Optional[This is to test Login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="parallel.UIRunner" hash-for-method="runScenario(&quot;Valid Login to the Application&quot;, &quot;Optional[This is to test Login functionality]&quot;)">runScenario("Valid Login to the Application", "Optional[This is to test Login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="parallel.UIRunner" hash-for-method="runScenario(&quot;Logout functionality&quot;, &quot;Optional[Verifying services]&quot;)">runScenario("Logout functionality", "Optional[Verifying services]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="parallel.UIRunner" hash-for-method="runScenario(&quot;Navigate to service operation screen&quot;, &quot;Optional[Verifying services]&quot;)">runScenario("Navigate to service operation screen", "Optional[Verifying services]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="parallel.UIRunner" hash-for-method="runScenario(&quot;Valid Login to the Application&quot;, &quot;Optional[This is to test Login functionality]&quot;)">runScenario("Valid Login to the Application", "Optional[This is to test Login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="parallel.UIRunner" hash-for-method="runScenario(&quot;Navigate to service operation screen&quot;, &quot;Optional[Verifying services]&quot;)">runScenario("Navigate to service operation screen", "Optional[Verifying services]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="parallel.UIRunner" hash-for-method="runScenario(&quot;Reset password&quot;, &quot;Optional[This is to test Resetpassword functionality]&quot;)">runScenario("Reset password", "Optional[This is to test Resetpassword functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="parallel.UIRunner" hash-for-method="runScenario(&quot;Invalid Login to the Application&quot;, &quot;Optional[This is to test Login functionality]&quot;)">runScenario("Invalid Login to the Application", "Optional[This is to test Login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="parallel.UIRunner" hash-for-method="runScenario(&quot;Logout functionality&quot;, &quot;Optional[Verifying services]&quot;)">runScenario("Logout functionality", "Optional[Verifying services]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">parallel.UIRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Reset password&quot;, &quot;Optional[This is to test Resetpassword functionality]&quot;)">
+                  </a> <!-- runScenario("Reset password", "Optional[This is to test Resetpassword functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Reset password", "Optional[This is to test Resetpassword functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Invalid Login to the Application&quot;, &quot;Optional[This is to test Login functionality]&quot;)">
+                  </a> <!-- runScenario("Invalid Login to the Application", "Optional[This is to test Login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Invalid Login to the Application", "Optional[This is to test Login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Valid Login to the Application&quot;, &quot;Optional[This is to test Login functionality]&quot;)">
+                  </a> <!-- runScenario("Valid Login to the Application", "Optional[This is to test Login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Valid Login to the Application", "Optional[This is to test Login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Logout functionality&quot;, &quot;Optional[Verifying services]&quot;)">
+                  </a> <!-- runScenario("Logout functionality", "Optional[Verifying services]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Logout functionality", "Optional[Verifying services]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Navigate to service operation screen&quot;, &quot;Optional[Verifying services]&quot;)">
+                  </a> <!-- runScenario("Navigate to service operation screen", "Optional[Verifying services]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Navigate to service operation screen", "Optional[Verifying services]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Valid Login to the Application&quot;, &quot;Optional[This is to test Login functionality]&quot;)">
+                  </a> <!-- runScenario("Valid Login to the Application", "Optional[This is to test Login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Valid Login to the Application", "Optional[This is to test Login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Navigate to service operation screen&quot;, &quot;Optional[Verifying services]&quot;)">
+                  </a> <!-- runScenario("Navigate to service operation screen", "Optional[Verifying services]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Navigate to service operation screen", "Optional[Verifying services]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Reset password&quot;, &quot;Optional[This is to test Resetpassword functionality]&quot;)">
+                  </a> <!-- runScenario("Reset password", "Optional[This is to test Resetpassword functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Reset password", "Optional[This is to test Resetpassword functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Invalid Login to the Application&quot;, &quot;Optional[This is to test Login functionality]&quot;)">
+                  </a> <!-- runScenario("Invalid Login to the Application", "Optional[This is to test Login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Invalid Login to the Application", "Optional[This is to test Login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Logout functionality&quot;, &quot;Optional[Verifying services]&quot;)">
+                  </a> <!-- runScenario("Logout functionality", "Optional[Verifying services]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Logout functionality", "Optional[Verifying services]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\OLD-2-NEW\API\API_Training_B51\API_automation_training\UI-Automation_Framework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; name=&quot;Parallel_Execution_edge&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;parallel.UIRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Parallel_Execution_edge --&gt;
+  &lt;test thread-count=&quot;4&quot; name=&quot;Parallel_Execution_chrome&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;parallel.UIRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Parallel_Execution_chrome --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Parallel_Execution_edge (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Parallel_Execution_chrome (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'parallel.UIRunner')
+data.setCell(0, 3, 38763);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'parallel.UIRunner')
+data.setCell(1, 3, 37341);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'parallel.UIRunner')
+data.setCell(2, 3, 23041);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'parallel.UIRunner')
+data.setCell(3, 3, 23028);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'parallel.UIRunner')
+data.setCell(4, 3, 11201);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'parallel.UIRunner')
+data.setCell(5, 3, 10969);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'parallel.UIRunner')
+data.setCell(6, 3, 10470);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'parallel.UIRunner')
+data.setCell(7, 3, 10451);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'parallel.UIRunner')
+data.setCell(8, 3, 7215);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'parallel.UIRunner')
+data.setCell(9, 3, 7191);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Reset password", "Optional[This is to test Resetpassword functionality]")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br><img src='C:\OLD-2-NEW\API\API_Training_B51\API_automation_training\UI-Automation_Framework\src\main\resources20221206_154056.png' height='700' width='900'/><br></span>
+                <span class="reporter-method-output"><br><img src='C:\OLD-2-NEW\API\API_Training_B51\API_automation_training\UI-Automation_Framework\src\main\resources20221206_154105.png' height='700' width='900'/><br></span>
+                <span class="reporter-method-output"><br><img src='C:\OLD-2-NEW\API\API_Training_B51\API_automation_training\UI-Automation_Framework\src\main\resources20221206_154108.png' height='700' width='900'/><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Reset password", "Optional[This is to test Resetpassword functionality]")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br><img src='C:\OLD-2-NEW\API\API_Training_B51\API_automation_training\UI-Automation_Framework\src\main\resources20221206_154055.png' height='700' width='900'/><br></span>
+                <span class="reporter-method-output"><br><img src='C:\OLD-2-NEW\API\API_Training_B51\API_automation_training\UI-Automation_Framework\src\main\resources20221206_154104.png' height='700' width='900'/><br></span>
+                <span class="reporter-method-output"><br><img src='C:\OLD-2-NEW\API\API_Training_B51\API_automation_training\UI-Automation_Framework\src\main\resources20221206_154107.png' height='700' width='900'/><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">parallel.UIRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">679 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">679 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">config_driver(edge)</span>
+                <span class="method-start">1570 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">config_driver(chrome)</span>
+                <span class="method-start">1570 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Reset password", "Optional[This is to test Resetpassword functionality]")</span>
+                <span class="method-start">5258 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Reset password", "Optional[This is to test Resetpassword functionality]")</span>
+                <span class="method-start">5741 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">config_driver(edge)</span>
+                <span class="method-start">43087 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Invalid Login to the Application", "Optional[This is to test Login functionality]")</span>
+                <span class="method-start">43092 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">config_driver(chrome)</span>
+                <span class="method-start">44023 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Invalid Login to the Application", "Optional[This is to test Login functionality]")</span>
+                <span class="method-start">44031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">config_driver(edge)</span>
+                <span class="method-start">54062 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Valid Login to the Application", "Optional[This is to test Login functionality]")</span>
+                <span class="method-start">54069 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">config_driver(chrome)</span>
+                <span class="method-start">55234 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Valid Login to the Application", "Optional[This is to test Login functionality]")</span>
+                <span class="method-start">55240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">config_driver(edge)</span>
+                <span class="method-start">64541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Navigate to service operation screen", "Optional[Verifying services]")</span>
+                <span class="method-start">64548 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">config_driver(chrome)</span>
+                <span class="method-start">65694 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Navigate to service operation screen", "Optional[Verifying services]")</span>
+                <span class="method-start">65704 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">config_driver(edge)</span>
+                <span class="method-start">87577 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Logout functionality", "Optional[Verifying services]")</span>
+                <span class="method-start">87587 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">config_driver(chrome)</span>
+                <span class="method-start">88747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Logout functionality", "Optional[Verifying services]")</span>
+                <span class="method-start">88752 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">94781 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">95969 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">Report</span>
+                <span class="method-start">102580 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

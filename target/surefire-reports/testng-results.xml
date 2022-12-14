@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37056" started-at="2022-10-20T04:51:17Z" finished-at="2022-10-20T04:51:54Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.UIRunner@6c3708b3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.UIRunner@5c5a1b69]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Parallel_Execution_chrome" duration-ms="36971" started-at="2022-10-20T04:51:17Z" finished-at="2022-10-20T04:51:54Z">
+      <class name="parallel.UIRunner">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:parallel.UIRunner@5c5a1b69]" name="setUpSuite" is-config="true" duration-ms="1443" started-at="2022-10-20T04:51:16Z" finished-at="2022-10-20T04:51:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.UIRunner@5c5a1b69]" name="setUpClass" is-config="true" duration-ms="749" started-at="2022-10-20T04:51:17Z" finished-at="2022-10-20T04:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="config_driver(java.lang.String)[pri:0, instance:parallel.UIRunner@5c5a1b69]" name="config_driver" is-config="true" duration-ms="4375" started-at="2022-10-20T04:51:18Z" finished-at="2022-10-20T04:51:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_driver -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.UIRunner@5c5a1b69]" name="runScenario" duration-ms="9116" started-at="2022-10-20T04:51:22Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-20T04:51:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add Item to Cart in Rahul Shetty academy Shopping Application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[This is to test Items added to Cart on RahulShetty Academy Registration page]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='sidebar']/form/div[1]/input"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'VSPLBLRLT0831', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [645512ff897f448aafe0df30d7b30d75, findElement {using=xpath, value=//*[@id='sidebar']/form/div[1]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KEERTH~1.B\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:53342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53342/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 645512ff897f448aafe0df30d7b30d75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='sidebar']/form/div[1]/input"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'VSPLBLRLT0831', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [645512ff897f448aafe0df30d7b30d75, findElement {using=xpath, value=//*[@id='sidebar']/form/div[1]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KEERTH~1.B\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:53342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53342/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 645512ff897f448aafe0df30d7b30d75
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy41.sendKeys(Unknown Source)
+at parallel.AddItemToCart.user_search_the_item_and_add_the_item_searched_to_the_cart_for_shopping(AddItemToCart.java:64)
+at ✽.User search the item and add the Item searched "adidas" to the Cart for shopping(file:///C:/Users/keerthana.b/Downloads/Framework/RahulShettyFramework_suresh/src/test/resources/parallel/AddItemToCart.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="config_driver(java.lang.String)[pri:0, instance:parallel.UIRunner@5c5a1b69]" name="config_driver" is-config="true" duration-ms="47" started-at="2022-10-20T04:51:31Z" finished-at="2022-10-20T04:51:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_driver -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.UIRunner@5c5a1b69]" name="runScenario" duration-ms="17230" started-at="2022-10-20T04:51:31Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-20T04:51:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add Invalid Item to Cart in Rahul Shetty academy Shopping Application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[This is to test Items added to Cart on RahulShetty Academy Registration page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.UIRunner@5c5a1b69]" name="tearDownClass" is-config="true" duration-ms="5427" started-at="2022-10-20T04:51:49Z" finished-at="2022-10-20T04:51:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="Report()[pri:0, instance:parallel.UIRunner@5c5a1b69]" name="Report" is-config="true" duration-ms="0" started-at="2022-10-20T04:51:54Z" finished-at="2022-10-20T04:51:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Report -->
+      </class> <!-- parallel.UIRunner -->
+    </test> <!-- Parallel_Execution_chrome -->
+    <test name="Parallel_Execution_edge" duration-ms="37056" started-at="2022-10-20T04:51:17Z" finished-at="2022-10-20T04:51:54Z">
+      <class name="parallel.UIRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.UIRunner@6c3708b3]" name="setUpClass" is-config="true" duration-ms="750" started-at="2022-10-20T04:51:17Z" finished-at="2022-10-20T04:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="config_driver(java.lang.String)[pri:0, instance:parallel.UIRunner@6c3708b3]" name="config_driver" is-config="true" duration-ms="4033" started-at="2022-10-20T04:51:18Z" finished-at="2022-10-20T04:51:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_driver -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.UIRunner@6c3708b3]" name="runScenario" duration-ms="9414" started-at="2022-10-20T04:51:22Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-20T04:51:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add Item to Cart in Rahul Shetty academy Shopping Application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[This is to test Items added to Cart on RahulShetty Academy Registration page]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='sidebar']/form/div[1]/input"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'VSPLBLRLT0831', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [645512ff897f448aafe0df30d7b30d75, findElement {using=xpath, value=//*[@id='sidebar']/form/div[1]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KEERTH~1.B\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:53342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53342/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 645512ff897f448aafe0df30d7b30d75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='sidebar']/form/div[1]/input"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'VSPLBLRLT0831', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [645512ff897f448aafe0df30d7b30d75, findElement {using=xpath, value=//*[@id='sidebar']/form/div[1]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KEERTH~1.B\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:53342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53342/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 645512ff897f448aafe0df30d7b30d75
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy41.sendKeys(Unknown Source)
+at parallel.AddItemToCart.user_search_the_item_and_add_the_item_searched_to_the_cart_for_shopping(AddItemToCart.java:64)
+at ✽.User search the item and add the Item searched "adidas" to the Cart for shopping(file:///C:/Users/keerthana.b/Downloads/Framework/RahulShettyFramework_suresh/src/test/resources/parallel/AddItemToCart.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="config_driver(java.lang.String)[pri:0, instance:parallel.UIRunner@6c3708b3]" name="config_driver" is-config="true" duration-ms="21" started-at="2022-10-20T04:51:31Z" finished-at="2022-10-20T04:51:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_driver -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.UIRunner@6c3708b3]" name="runScenario" duration-ms="17656" started-at="2022-10-20T04:51:31Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-20T04:51:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add Invalid Item to Cart in Rahul Shetty academy Shopping Application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[This is to test Items added to Cart on RahulShetty Academy Registration page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.UIRunner@6c3708b3]" name="tearDownClass" is-config="true" duration-ms="5136" started-at="2022-10-20T04:51:49Z" finished-at="2022-10-20T04:51:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- parallel.UIRunner -->
+    </test> <!-- Parallel_Execution_edge -->
+  </suite> <!-- Suite -->
+</testng-results>

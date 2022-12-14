@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Parallel_Execution_edge(failed)(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="parallel.UIRunner">
+        <methods>
+          <include name="config_driver"/>
+          <include name="setUpSuite"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="afterTest"/>
+          <include name="Report"/>
+          <include name="beforeTest"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- parallel.UIRunner -->
+    </classes>
+  </test> <!-- Parallel_Execution_edge(failed)(failed) -->
+  <test thread-count="4" parallel="tests" name="Parallel_Execution_chrome(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="parallel.UIRunner">
+        <methods>
+          <include name="config_driver"/>
+          <include name="setUpSuite"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="afterTest"/>
+          <include name="Report"/>
+          <include name="beforeTest"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- parallel.UIRunner -->
+    </classes>
+  </test> <!-- Parallel_Execution_chrome(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
